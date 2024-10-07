@@ -19,3 +19,8 @@ This repository covers the installation of macOS on the ASUS C425, C434, and C43
 - A prebuilt EFI
 
 Note that these things often take weeks to complete, and take paitence and some basic knowledge on how PCs function. Because of this, you are expected to use Google. This is NOT a one-click thing.
+
+# September 9 2024 Update:
+As of writing, the Chromebook has broke. It exhibits no signs of life, and is more than likely broken. With that said, this guide will no longer be updated, since I am no longer to test the device anymore.
+
+Pull requests are always welcome. 
