@@ -24,7 +24,7 @@ This is done to fix several notorious bugs in Chromeintoshes. You will suffer gr
 3. Download flashrom, then `chmod +x` it;
    ```cd; curl -LO https://tree123.org/chrultrabook/utils/flashrom-libpci38; chmod +x flashrom-libpci38```
 4. Flash
-   1. Backup your current rom, just in case things go wrong: `./flashrom-libpci38 -p internal -r current.rom`
+   1. Backup your current ROM, just in case things go wrong: `./flashrom-libpci38 -p internal -r current.rom`
    2. Flash your custom firmware: `sudo ./flashrom-libpci38 -p internal --ifd -i bios -w ROM.rom`
 5. Assuming it said success on all checks, reboot.
 
