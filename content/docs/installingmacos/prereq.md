@@ -15,7 +15,7 @@ Read this before proceeding. I am not responsible if you fuck up your laptop
 
  > **Warning**:  **By continuing, you acknowledge that you have read and understood the contents of [LICENSE.md](LICENSE.md) and the [disclaimer](#%EF%B8%8F-disclaimer-%EF%B8%8F), and consent to their terms.**
 
-The instructions outlined in this [GitHub repo](https://github.com/meghan06/ChromebookOSX) have the potential to cause permanent harm to your laptop, and you should be aware of this potential outcome before proceeding. I cannot be held accountable for any damage caused from following or disregarding these instructions. I make no assurances concerning the dependability or efficacy of the materials referenced in this repository.
+The instructions outlined in this [GitHub repo](https://github.com/meghan06/ChromebookOSX) have the potential to cause permanent harm to your laptop, and you should be aware of this potential outcome before proceeding. I cannot be held accountable for any damage caused by following or disregarding these instructions. I make no assurances concerning the dependability or efficacy of the materials referenced in this repository.
 
 
 ### Requirements
@@ -23,7 +23,7 @@ The instructions outlined in this [GitHub repo](https://github.com/meghan06/Chro
 Before you start, you'll need to have the following items to complete the process:
 
 - **An understanding that this process has the potential to damage and/or brick your device, potentially causing it to become inoperable.**
-- An external storage device (can range from a SD card to a USB Disk / Drive) for creating the installer USB.  
+- An external storage device (can range from an SD card to a USB Disk / Drive) for creating the installer USB.  
 - The latest OpenCore version (**at least 0.8.8**) for eMMC boot drive support.   
 - An internet connection.
 
@@ -49,7 +49,7 @@ Before you start, you'll need to have the following items to complete the proces
 | Webcam             | Working              | Working OOTB                                                                                  |
 | Internal Mic.      | Not working          | Same reason why internal speakers don't work; unsupported codec. (`max98927`)                 |
 | Logout / Lock      | Working              | Working OOTB.                                                                                 |
-| Shutdown / Restart | Working              | Working with `ProtectMemoryReigons` set to true in `config.plist`.                            |    
+| Shutdown / Restart | Working              | Working with `ProtectMemoryRegions` set to true in `config.plist`.                            |    
 | Continuity         | Not Working          | Limitation with Intel WiFI cards.                                                             |    
 
 
@@ -74,13 +74,14 @@ Before you start, you'll need to have the following items to complete the proces
 7. macOS Sonoma (14)
 
 #### OpenCore
-1 .0.8.6
+1. 0.8.6
 2. 0.8.7
 3. 0.8.8
 4. 0.8.9
 5. 0.9.0
 6. 0.9.4
 7. 0.9.6
+8. 1.0.7
 
 
 
