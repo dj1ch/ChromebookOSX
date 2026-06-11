@@ -9,21 +9,21 @@ draft: false
 
 # Installation
 
-{{< alert context="info" text="Read through this more than once, to prevent errors. Read these steps carefully, they are required for proper functioning." />}}
+{{< alert context="info" text="Read through this more than once, to prevent errors. Read these steps carefully; they are required for proper functioning." />}}
 
 Time for the soul-sucking stuff /j
  
  **You want to start with the [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/) first.** Afterwards, we'll modify your EFI a little bit to make it work with our Chromebook.
-   - Take your time and read everything in there throughly, it's good practice to do so.
+   - Take your time and read everything in there thoroughly; it's good practice to do so.
    - For your `config.plist` setup, you want to follow the Laptop Kaby Lake section.
-   - The Dortania guide is actually pretty up-to-date with Chromebook items so it should be a pretty smooth experience overall. We will cover them here anyway just in case you missed it.
+   - The Dortania guide is actually pretty up-to-date with Chromebook items, so it should be a pretty smooth experience overall. We will cover them here anyway, just in case you missed it.
 
 ### ACPI Folder
 Everything else you need to do in your ACPI folder
 
 1. Add the compiled version of [SSDT-PLUG-ALT.aml](https://github.com/meghan06/croscorebootpatch) into your ACPI folder.
 2. Compile and add [the top row keyboard remap SSDT](https://github.com/1Revenger1/Acer-Spin-713-Hackintosh/blob/main/src/ACPI/SSDT-ChromeKeys.dsl)
-3. Compile and add a [fake ambient light sensor SSDT](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/AcpiSamples/Source/SSDT-ALS0.dsl) to your ACPI folder. This is needed for working keyboard backlight.
+3. Compile and add a [fake ambient light sensor SSDT](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/AcpiSamples/Source/SSDT-ALS0.dsl) to your ACPI folder. This is needed for a working keyboard backlight.
 4. Download SSDTTime, then generate a FixHPET SSDT. Select C for default, then drag the compiled version into your ACPI folder
 
 ### Kext Folder¹
@@ -35,7 +35,7 @@ Everything else you need in your Kext folder
 
 ### config.plist Patches
 1. Your SMBIOS should be `MacBookAir8,1`
-2. under `Booter -> Quirks` set `ProtectMemoryRegions` to `TRUE`. It should look something like this in your `config.plist` when done correctly:
+2. Under `Booter -> Quirks` set `ProtectMemoryRegions` to `TRUE`. It should look something like this in your `config.plist` when done correctly:
 
    | Quirk                | Type | Value    |
    | -------------------- | ---- | -------- |
