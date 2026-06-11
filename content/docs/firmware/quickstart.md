@@ -24,15 +24,15 @@ description: "Enabling DevMode + Flashing FW"
 ## Step 2: Disabling Write Protection:
 
 1. Open up the back of your Chromebook. There are screws under all 4 rubber feet.
-2. Find the cable going from the battery to the motherbord
+2. Find the cable going from the battery to the motherboard
 3. Pull back the metal cover protecting the cable.
 4. Gently lift up the cable.
-5. Plug in your charger, then boot chromeOS **with the battery unplugged.**
+5. Plug in your charger, then boot ChromeOS **with the battery unplugged.**
 6. Flash FW (see below)
 
 ## Step 3: Firmware
 
-To keep it breif, UEFI firmware allows the Chromebook to become any other laptop. This means you will lose access to chromeOS. RW_Legacy allows you to dualboot chromeOS along with Linux.
+To keep it brief, UEFI firmware allows the Chromebook to become any other laptop. This means you will lose access to ChromeOS. RW_Legacy allows you to dual-boot ChromeOS along with Linux.
 
 1. Open a terminal via VT-2 by pressing `ctrl` + `alt` + `→`.
 2. Log in as user `chronos`. Note that there should be no password unless you set one yourself.
@@ -41,7 +41,7 @@ To keep it breif, UEFI firmware allows the Chromebook to become any other laptop
 cd; curl -LO mrchromebox.tech/firmware-util.sh && sudo bash firmware-util.sh
 ```
 
-If you encounter certificate related errors when downloading the script from ChromeOS, then add -k to the curl command and script command to bypass SSL certificate checking as so:
+If you encounter certificate-related errors when downloading the script from ChromeOS, then add -k to the curl command and script command to bypass SSL certificate checking as so:
 ```shell
 cd; curl -LOk mrchromebox.tech/firmware-util.sh && sudo bash firmware-util.sh
 ```
